@@ -17,12 +17,15 @@ __
 <img src="./images/Pokeball.png" width="100">
 
 ### So what's it about?
-PokéBites contains all 151 of the OG Gen1 Pokémon
+PokéBites contains all 151 of the OG Gen1 Pokémon 😎
 
 ### How do I use it?
 See below for the list of commands for our API
 
-| Header    &#124; Description   |
-|-----------|---------------|  
-|some text  | Some more text|
+<!-- &#124; -->
+
+| HTTP Method    | Path          | Request Body | Response Body | Status Code   |
+|----------------|---------------|--------------|---------------|---------------|  
+|GET             | /             | n/a          | List or Pokémon and their properties | 200
+|GET             | /?number=1    | n/a          | The first Pokémon | 200
 
