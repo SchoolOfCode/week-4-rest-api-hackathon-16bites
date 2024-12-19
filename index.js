@@ -1,5 +1,6 @@
 import express from 'express';
 import fs from "node:fs/promises";
+import { type } from 'node:os';
 const filename = 'pokemongen1.json';
 
 const app = express();
@@ -35,3 +36,31 @@ app.get("/", async function(req,res) {
     }
 }
 );
+
+
+//Create  variable to store all of our Pokemon
+//return from an async function to resolve promise
+async function getAllPokemon() {
+    const data = await fs.readFile(filename, "utf8");
+    //Forgot to parse from JSON!
+    const allPokemons = JSON.parse(data);
+    // console.log(allPokemons);
+    return allPokemons;    
+}
+
+//get Pokemon by Number helper function
+//take in a given Pokemons number 1,2,3
+async function getPokemonByNumber(pokemonNumber) {
+    const allPokemons = await getAllPokemon();
+    // console.log(allPokemons);
+
+    //filter allPokemons by "Number" = pokemonNumber
+    const pokemon = allPokemons.filter(function(pokemon) {
+        return pokemon.Number === pokemonNumber;
+        });
+    console.log(pokemon)
+    //store the resulting object in a new variable
+    //return the resulting object
+    }
+
+getPokemonByNumber(10)
