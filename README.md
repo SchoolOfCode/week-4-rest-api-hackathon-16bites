@@ -27,5 +27,7 @@ See below for the list of commands for our API
 | HTTP Method    | Path          | Request Body | Response Body | Status Code   |
 |----------------|---------------|--------------|---------------|---------------|  
 |GET             | /             | n/a          | List or Pokémon and their properties | 200
-|GET             | /?number=1    | n/a          | The first Pokémon | 200
+|GET             | /?number=1    | n/a          | The first Pokémon etc. | 200
+|GET             | /Pikachu      | n/a          | Pokémon matching the name | 200
 
+*Hope you have a Blast(oise!)*
