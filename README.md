@@ -26,8 +26,12 @@ See below for the list of commands for our API
 
 | HTTP Method    | Path          | Request Body | Response Body | Status Code   |
 |----------------|---------------|--------------|---------------|---------------|  
-|GET             | /             | n/a          | List or Pokémon and their properties | 200
-|GET             | /?number=1    | n/a          | The first Pokémon etc. | 200
+|GET             | /             | n/a          | Lists all Pokémon and their properties | 200
+|GET             | /pokemon/number/1    | n/a          | The first Pokémon etc. | 200
 |GET             | /Pikachu      | n/a          | Pokémon matching the name | 200
+|GET             | /?attack=highest      | n/a          | Pokémon with the highest attack rating | 200
+|GET             | /?speed=lowest      | n/a          | Pokémon with the lowest speed rating | 200
 
-*Hope you have a Blast(oise!)*
+*Hope you have a Blast(oise!)* 
+
+<img src="./images/blastoise.png" width="100">
