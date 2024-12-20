@@ -23,7 +23,7 @@ PokéBites contains all 151 of the OG Gen1 Pokémon 😎
 
 Initialise our API with 'npm start'
 
-Our API wll run on: http://localhost:3000/
+Our API will run on: http://localhost:3000/
 
 See below for the list of commands for our API
 
