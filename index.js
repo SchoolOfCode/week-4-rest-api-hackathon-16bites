@@ -18,14 +18,18 @@ function convertKeysToLowercase(obj) {
   return newObj;
 }
 
+
 // GET request - all Pokémon
 app.get("/", async function (req, res) {
   try {
     const data = await fs.readFile(filename, "utf8");
     let parsedData = JSON.parse(data);
 
+
     // Convert all keys in the parsed data to lowercase
     parsedData = parsedData.map(convertKeysToLowercase);
+
+
 
     // get the key and value from the query, convert them to lowercase
     const key = Object.keys(req.query)[0].toLowerCase();
@@ -76,3 +80,4 @@ app.get("/", async function (req, res) {
     });
   }
 });
+
