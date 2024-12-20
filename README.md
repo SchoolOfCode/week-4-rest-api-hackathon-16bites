@@ -32,7 +32,7 @@ See below for the list of commands for our API
 | HTTP Method    | Path          | Request Body | Response Body | Status Code   |
 |----------------|---------------|--------------|---------------|---------------|  
 |GET             | /             | n/a          | Lists all Pokémon and their properties | 200
-|GET             | /pokemon/number/1    | n/a          | The first Pokémon etc. | 200
+|GET             | /?number=151    | n/a          | The first Pokémon etc. | 200
 |GET             | /?name=Pikachu      | n/a          | Pokémon matching the name | 200
 |GET             | /?attack=highest      | n/a          | Pokémon with the highest attack rating | 200
 |GET             | /?speed=lowest      | n/a          | Pokémon with the lowest speed rating | 200
